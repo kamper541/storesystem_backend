@@ -1,0 +1,512 @@
+{
+  "22": {
+    "id": "22",
+    "name": "Chim",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "30": {
+    "id": "30",
+    "name": "Thonglor Thai",
+    "address": "420 Geary St.,SF",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "31": {
+    "id": "31",
+    "name": "White Elephant",
+    "address": "146 Hazelwood DR,South SanFrancisco,Ca",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "32": {
+    "id": "32",
+    "name": "Lers Ros Larkin",
+    "address": "730 Larkin st,San Francisco,Ca",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "33": {
+    "id": "33",
+    "name": "Lers Ros Hayes",
+    "address": "307 Hayes St, San Francisco ,Ca",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "34": {
+    "id": "34",
+    "name": "Lers Ros 16th St.",
+    "address": "3189  16th St. ,San Francisco,Ca",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "35": {
+    "id": "35",
+    "name": "Bua Luang",
+    "address": "1166 Solano  AVE. Albany,Ca 94706",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "36": {
+    "id": "36",
+    "name": "Eleven Tiger",
+    "address": "171 Hartz Ave. Danvile,Ca 94526",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "37": {
+    "id": "37",
+    "name": "Andaman Thai",
+    "address": "84 Elmwood DR. San Ramon",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "38": {
+    "id": "38",
+    "name": "Khob Khun",
+    "address": "3741 Geary Blvd. San Fran cisco,Ca",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "39": {
+    "id": "39",
+    "name": "Lapat Thai Noodle",
+    "address": "601 Larkin St. San Francisco ,Ca94109",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "40": {
+    "id": "40",
+    "name": "PicaPica Restaurant",
+    "address": "401 Valencia St. San Francisco,Ca94103",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "41": {
+    "id": "41",
+    "name": "Royal Thai",
+    "address": "610  3rd St. San Rafael,CA 94901",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "42": {
+    "id": "42",
+    "name": "Kuma ",
+    "address": "1417  4th St. San Rafael",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "43": {
+    "id": "43",
+    "name": "Rama V Thai restaurant",
+    "address": "1028 E EL Camino real Sunnyvale Ca 94087",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "44": {
+    "id": "44",
+    "name": "BaanYaai",
+    "address": "2274 Lombard St.,San Francisco ,Ca",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "45": {
+    "id": "45",
+    "name": "Black Wood Restaurant ",
+    "address": "2150 Chestnut St. San Francisco ,CA",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "46": {
+    "id": "46",
+    "name": "Sweet Maple2",
+    "address": "150 University Ave ,Palo Alto ,Ca 94301",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "48": {
+    "id": "48",
+    "name": "ILCHA Restaurant",
+    "address": "2151 Lombard St. SanFrancisco ,Ca 94123",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "50": {
+    "id": "50",
+    "name": "Zen Yai restaurant ",
+    "address": "771 Ellis St. San Francisco ,CA 94109",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "51": {
+    "id": "51",
+    "name": "Thai Lao",
+    "address": "1581 Sycamore Ave. Suite2 Hercules,Ca 94547",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "52": {
+    "id": "52",
+    "name": "Pinsarossa",
+    "address": "2101  Fillmore St. San Francisco ,Ca 94115",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "53": {
+    "id": "53",
+    "name": "Saap Thai",
+    "address": "427 Linden Ave. South SF,CA",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "1111": {
+    "id": "1111",
+    "name": "Amphawa",
+    "address": "5020 Geary St.",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "2023162": {
+    "id": "2023162",
+    "name": "Delarosa ",
+    "address": "San Francisco",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "024": {
+    "id": "024",
+    "name": "Odumak",
+    "address": "733 Taraval St. San Francisco,Ca 94116",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "001": {
+    "id": "001",
+    "name": "House of Thai",
+    "address": "901 Larkin St.",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "002": {
+    "id": "002",
+    "name": "House of Thai2",
+    "address": "494 Haight St.",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "003": {
+    "id": "003",
+    "name": "Thai spice",
+    "address": "1730 Polk St.",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "007": {
+    "id": "007",
+    "name": "Lapisara",
+    "address": "698 Post St.",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "004": {
+    "id": "004",
+    "name": "Thai Thai",
+    "address": "1400 California St.",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "005": {
+    "id": "005",
+    "name": "Tycoon",
+    "address": "620 O'Farell St.",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "006": {
+    "id": "006",
+    "name": "Ramen City",
+    "address": "1398 Grant AVE.",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "008": {
+    "id": "008",
+    "name": "COCURRY",
+    "address": "6180 JARVIS AVE.,NEWARK",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "009": {
+    "id": "009",
+    "name": "Pingyang",
+    "address": "955 Larkin St. SanFrancisco ,Ca 94109",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "010": {
+    "id": "010",
+    "name": "Thep",
+    "address": "400 Waller St. San Francisco 94117",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "011": {
+    "id": "011",
+    "name": "Million Thai",
+    "address": "385 Taylor St.",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "012": {
+    "id": "012",
+    "name": "Vanda Siam",
+    "address": "668  Sacramento St. San Francisco,Ca 94111",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "013": {
+    "id": "013",
+    "name": "Schilling&Co Cafe ",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "014": {
+    "id": "014",
+    "name": "Gai Baan",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "015": {
+    "id": "015",
+    "name": "SaapVer",
+    "address": "88 Division St. San Francisco,Ca94103",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "016": {
+    "id": "016",
+    "name": "Thai Chef",
+    "address": "4133  18th St.San Francisco,Ca 94114",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "017": {
+    "id": "017",
+    "address": "1793 Haight St. SF,Ca 94117",
+    "name": "Ginza Sushi",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "018": {
+    "id": "018",
+    "name": "NaYa Octavia",
+    "address": "535 Octavia St. San Francisco ,Ca94102",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "019": {
+    "name": "Lao table",
+    "id": "019",
+    "address": "149  2nd St. San Francisco,Ca94105",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "020": {
+    "id": "020",
+    "name": "Naya Geary",
+    "address": "5338 Geary Blvd,San Francisco,Ca 94121",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "021": {
+    "id": "021",
+    "name": "Raw Sugar Factory ",
+    "address": "525 Valencia St.",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "022": {
+    "id": "022",
+    "name": "The Lucky Pig",
+    "address": "791 O'farrell st.SF,CA 94109",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "023": {
+    "id": "023",
+    "name": "One Waan Thai",
+    "address": "2922 Diamond St.San Francisco,Ca",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "025": {
+    "id": "025",
+    "name": "Rin's Thai ",
+    "address": "4301  24th St. San Francisco,Ca 94114",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "026": {
+    "id": "026",
+    "name": "ChaiYa",
+    "address": "272 Claremont Blvd,San Francisco ,Ca94127",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "027": {
+    "id": "027",
+    "name": "Sweet Lime ",
+    "address": "2100 Sutter St, Sanfrancisco,CA 94115",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "028": {
+    "id": "028",
+    "name": "WA WA Thai",
+    "address": "3009 MacArthur Blvd,Oakland,Ca94602",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "029": {
+    "id": "029",
+    "name": "Arawan Thai",
+    "address": "47 Caledonia St. Sausalito,Ca94965",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "0000": {
+    "id": "0000",
+    "name": "Test System",
+    "address": "00",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "47 ": {
+    "id": "47 ",
+    "name": "Four Chairs ",
+    "address": "3282 Mission St. San Francisco ,Ca 94110",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  },
+  "49 ": {
+    "id": "49 ",
+    "name": "Regent Thai",
+    "address": "1700 Church St.San Francisco,Ca 94131",
+    "country": { "name": "United States", "code": "us" },
+    "verified": true,
+    "date": "2023-12-25",
+    "status": "qualified"
+  }
+}
