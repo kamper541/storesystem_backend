@@ -1,0 +1,8 @@
+pandas
+Django~=4.2
+django-cors-headers
+cryptography
+numpy
+djangorestframework
+markdown
+django-filter
