@@ -5,6 +5,7 @@ ENV PYTHONUNBUFFERED=1
 
 ENV APP_HOME /app
 ENV TZ 'Asia/Bangkok'
+ENV PORT 8000
 
 
 WORKDIR $APP_HOME
@@ -15,6 +16,5 @@ RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
-EXPOSE 8000
 
-CMD exec gunicorn --bind 0.0.0.0:8000 --workers 4 --threads 6 --timeout 0 --worker-class uvicorn.workers.UvicornWorker sstm.asgi:application
+CMD exec gunicorn --bind 0.0.0.0:$PORT --workers 4 --threads 6 --timeout 0 --worker-class uvicorn.workers.UvicornWorker sstm.asgi:application
