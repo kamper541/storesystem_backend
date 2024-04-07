@@ -15,6 +15,6 @@ RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
-EXPOSE 8080
+EXPOSE 8000
 
-CMD ["python3", "manage.py", "runserver", "0.0.0.0:8080"]
+CMD exec gunicorn --bind 0.0.0.0:8000 --workers 4 --threads 6 --timeout 0 --worker-class uvicorn.workers.UvicornWorker sstm.wsgi:application
