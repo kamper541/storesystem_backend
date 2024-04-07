@@ -1,18 +1,19 @@
-# Use a slim Python 3 image as the base
-FROM python:3.9-slim
+FROM python:3.9
 
-# Set the working directory for the container
-WORKDIR /app
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
-# Copy requirements.txt file
+ENV APP_HOME /app
+ENV TZ 'Asia/Bangkok'
+ENV PORT 8000
+
+WORKDIR $APP_HOME
+
 COPY requirements.txt .
 
-# Install Python dependencies from requirements.txt
-RUN pip install -r requirements.txt
+RUN pip install --upgrade pip
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the entire project directory to the container
 COPY . .
-# Expose the Django development server port
-EXPOSE 8000
-# Run Django development server
-CMD [ "python", "manage.py", "runserver", "0.0.0.0:8000" ]
+
+CMD exec gunicorn --bind 0.0.0.0:$PORT --workers 2 --threads 6 --timeout 0 --worker-class uvicorn.workers.UvicornWorker cpp.asgi:application
