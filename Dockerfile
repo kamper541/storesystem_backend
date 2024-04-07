@@ -16,4 +16,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD exec gunicorn --bind 0.0.0.0:$PORT --workers 2 --threads 6 --timeout 0 --worker-class uvicorn.workers.UvicornWorker cpp.asgi:application
+CMD exec gunicorn --bind 0.0.0.0:$PORT --workers 2 --threads 6 --timeout 0 --worker-class uvicorn.workers.UvicornWorker sstm.asgi:application
