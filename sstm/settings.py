@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 # import mimetypes
 # mimetypes.add_type("text/css", ".css", True)
 
@@ -27,6 +27,8 @@ SECRET_KEY = 'django-insecure-ctvylh_5k!()jb3msnk2d(es2^!vy)qr+!$d4#l_b9nl19_+6v
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+ENV = os.getenv('ENV', 'dev')
 
 ALLOWED_HOSTS = ['*']
 CORS_ORIGIN_ALLOW_ALL = True
@@ -121,16 +123,16 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Bangkok'
 
-USE_I18N = True
+USE_I18N = False
 
 USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

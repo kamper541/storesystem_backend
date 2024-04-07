@@ -17,4 +17,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 EXPOSE 8000
 
-CMD exec gunicorn --bind 0.0.0.0:8000 --workers 4 --threads 6 --timeout 0 --worker-class uvicorn.workers.UvicornWorker sstm.wsgi:application
+CMD exec gunicorn --bind 0.0.0.0:8000 --workers 4 --threads 6 --timeout 0 --worker-class uvicorn.workers.UvicornWorker sstm.asgi:application
