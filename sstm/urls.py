@@ -24,9 +24,4 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('storesystem/', include('storesystem.urls')),
-    path('', views.app_page, name='app_page'),
 ]
-
-
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

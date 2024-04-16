@@ -147,7 +147,7 @@ def create_invoice(request: any) -> JsonResponse:
         i = Invoice(**params)
         i.invoiceNumber = f'{datetime.datetime.today().year}-{i.id}'
         i.save()
-        return JsonResponse({'success':True,'msg': "Created Invoices"}, safe=False)
+        return JsonResponse({'success':True,'msg': "Created Invoices", 'id': i.id}, safe=False)
     except Exception as e:
         print(e)
         return JsonResponse({'success':False,'msg': str(e)}, safe=False)
@@ -162,9 +162,41 @@ def get_users():
     return JsonResponse({}, safe=False)
 
 @api_view(['GET'])
+def update_profile(request):
+    # params = {
+    #     'id': request.GET.get('id'),
+    # }
+    try:
+        instance_id = request.GET.get('instance_id')
+
+        update_info = {
+            'name': request.GET.get('name'),
+            'address': request.GET.get('address'),
+            'email': request.GET.get('email'),
+            'state': request.GET.get('state'),
+            'city': request.GET.get('city'),
+            'zip': request.GET.get('zip'),
+        }
+
+        user = UserInfo.objects.filter(instance_id=instance_id)
+        user.update(**update_info)
+        return HttpResponse(status=status.HTTP_200_OK)
+    except Exception as e:
+        print(e)
+        return HttpResponse(status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['GET'])
 def get_invioces(request: any) -> JsonResponse:
     try:
         invoices = Invoice.objects.filter(customer_id=UserInfo.objects.get(instance_id = request.GET.get('id'))).values()
+        return JsonResponse(list(invoices), safe=False)
+    except Exception as e:
+        return JsonResponse({'success':False,'msg': str(e)}, safe=False)
+    
+@api_view(['GET'])
+def get_all_invioces(request: any) -> JsonResponse:
+    try:
+        invoices = Invoice.objects.values()
         return JsonResponse(list(invoices), safe=False)
     except Exception as e:
         return JsonResponse({'success':False,'msg': str(e)}, safe=False)
@@ -201,16 +233,20 @@ def add_items_to_invoice(request: any) -> JsonResponse:
 def save_items_to_invoice(request: any) -> JsonResponse:
     try:
         params = {
-            'items': json.loads(request.GET.get('items'))
+            'items': json.loads(request.GET.get('items')),
+            'discount': request.GET.get('discount'),
+            'inv_id': request.GET.get('inv_id')
         }
-        print(params['items'])
+        Invoice.objects.filter(id=params['inv_id']).update(totalDiscounted=params['discount'])
         for item in params['items']:
             param = {
-                'qty':item['qty'],
+                'qty':int(item['qty']),
                 'tax': float(item['tax']),
                 'price': float(item['price'])
             }
+            print(param)
             InvoiceItems.objects.filter(id=item['id']).update(**param)
+
         return JsonResponse({'success':True}, safe=False)
     except Exception as e:
         print(e)
@@ -223,10 +259,12 @@ def upload_stock_csv(request) -> JsonResponse:
         import csv
         import io
         columns = ['id', 'detail', 'jm_id', 'be_id', 'unit_price', 'barcode_id', 'piece', 'discounted', 'qt', 'cost', 'code' , 'taxactive']
-        df = pd.read_csv(io.StringIO(file), sep=',', columns=columns)
+        # print(io.StringIO(file))
+        df = pd.read_csv(io.StringIO(file), sep=',')
+        raise
         # TODO: create or update an items
         return JsonResponse({'success':True}, safe=False)
     except Exception as e:
         print(e)
-        return JsonResponse({'success':False,'msg': str(e)}, safe=False)
+        return HttpResponse(status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
